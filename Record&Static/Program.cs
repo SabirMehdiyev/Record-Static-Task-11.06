@@ -1,4 +1,6 @@
-﻿namespace Record_Static
+﻿using System;
+
+namespace Record_Static
 {
     internal class Program
     {
@@ -12,8 +14,10 @@
                 string email = Console.ReadLine();
                 Console.WriteLine("Zehmet olmasa şifrəni daxil edin:");
                 string password = Console.ReadLine();
+                Console.WriteLine("Zehmet olmasa Fullname daxil edin:");
+                string fullName = Console.ReadLine();
 
-                users[userCount] = new User(email, password);
+                users[userCount] = new User(email, password, fullName);
                 userCount++;
                 Console.WriteLine("Istifadeci elave olundu");
             }

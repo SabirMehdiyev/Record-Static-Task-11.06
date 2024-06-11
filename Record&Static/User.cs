@@ -20,12 +20,13 @@ internal class User
             _password = value;
         }
     }
-    public User(string email, string password)
+    public User(string email, string password, string fullname)
     {
         id++;
         Id = id;
         Email = email;
         Password = password;
+        Fullname = fullname;
 
     }
 
